@@ -1,0 +1,63 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    <img src="../../../assets/icon.png" width="100" height="100">
+                </div>
+              <div class="text-center" style="color: rgb(214, 222, 222)">
+                <h1>ENVIAR AHORA</h1>
+                <p style="text-align: justify;">Paquetes y palés, grandes y pequeños, podemos ofrecerle opciones de entrega instantánea para sus necesidades de envío, tanto a nivel nacional como internacional. Complete los detalles de su envío a continuación y le proporcionaremos servicios adaptados a sus requisitos específicos. Simplemente elija la opción que más le convenga y continúe reservando.</p>               
+                <!-- <h1>1</h1><p>INTRODUZCA ORIGEN Y DESTINO</p>
+                <h1>2</h1><p>DESCRIBA SU EMBARQUE</p>
+                <h1>3</h1><p>OBTENER PRECIOS DE ENTREGA</p>
+                <h1>4</h1><p>PROCEDA CON LA RESERVA EN LÍNEA</p> -->
+              </div>
+                <h1 class="text-center" style="color: rgb(214, 222, 222)">
+                    Realizo un envío como persona privada
+                </h1>
+
+
+                <div class="card" style="width: 40rem;background-color: #424242">
+                    <div class="card-body">
+                        <form (ngSubmit) = "formSubmit()">
+                            <mat-label style="color: antiquewhite;">De:</mat-label>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Estado de origen</mat-label>
+                                <input required [(ngModel)]="envios.estado_envio" name="estado_envio" matInput placeholder="Estado de origen">
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Cuidad de origen (opcional)</mat-label>
+                                <input required [(ngModel)]="envios.cuidadO" name="cuidadO" type="text" matInput placeholder="Cuidad de origen (opcional)">
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Codigo postal</mat-label>
+                                <input required [(ngModel)]="envios.localizacion" name="localizacion" name="localizacion" matInput placeholder="Codigo postal">
+                            </mat-form-field>
+                            <mat-label style="color: antiquewhite;">Para:</mat-label>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Estado de destino</mat-label>
+                                <input required [(ngModel)]="envios.estado_pago" name="estado_pago" matInput placeholder="Estado de destino">
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Cuidad de destino (opcional)</mat-label>
+                                <input required [(ngModel)]="envios.cuidadD" name="cuidadD" type="text" matInput placeholder="Cuidad de destino (opcional)">
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Codigo postal</mat-label>
+                                <input required [(ngModel)]="envios.localizacionD" name="localizacionD"  matInput placeholder="Codigo postal">
+                            </mat-form-field>
+                            <div class="container text-center">
+                                <button type="button" class="btn btn-danger" routerLink="/embarque">Describir embarque</button>
+                              <button type="reset" style="margin-left: 20px" mat-raised-button color="accent">Limpiar</button>
+                            </div>
+                        </form>
+        
+                     </div>
+                   </div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+

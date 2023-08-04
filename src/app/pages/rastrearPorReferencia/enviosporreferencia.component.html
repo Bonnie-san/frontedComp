@@ -1,0 +1,42 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-6 offset-md-3">
+                    <div class="card" style="width: 40rem;background-color: #424242">
+                    <h1 style="text-align: center; color: white;">Rastrear por referencia</h1>
+                    <mat-label style="color: white; text-align: center;">Introduzca una referencia para revisar rápidamente el estado de su envío.</mat-label>
+                    <div class="card-body">
+                        <form (ngSubmit) = "formSubmit()">
+                            <mat-label style="color: white;">Referencia de envío</mat-label>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <input required [(ngModel)]="enviosproReferencia.referenciaEnvio" name="referenciaEnvio" matInput placeholder="Referencia de envío">
+                            </mat-form-field>
+                            <mat-label style="color: white;">Número de cuenta</mat-label>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <input required [(ngModel)]="enviosproReferencia.num_cuenta" name="num_cuenta" type="text" matInput placeholder="Número de cuenta">
+                            </mat-form-field>
+                            <mat-label style="color: white;">Destino</mat-label>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <input required [(ngModel)]="enviosproReferencia.destino" name="destino" name="localizacion" matInput placeholder="Destino">
+                            </mat-form-field>
+                            <mat-label style="color: white;">Rango de fecha</mat-label>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <input required [(ngModel)]="enviosproReferencia.rango_fecha" name="rango_fecha" type="date" matInput placeholder="Rango de fecha">
+                               </mat-form-field>
+                               <mat-form-field class="full-width" appearance="fill">
+                                <input required [(ngModel)]="enviosproReferencia.rango_fecha" name="rango_fecha" type="date" matInput placeholder="Rango de fecha">
+                               </mat-form-field>
+                            <div class="container text-center">
+                                <button type="button" class="btn btn-success" onclick="alert('Rastreando paquete')">Rastrear</button>
+                              <button type="reset" style="margin-left: 20px" mat-raised-button color="accent">Limpiar</button>
+                            </div>
+                            <a class="navbar-brand text-white" style="background-color: rgb(34, 34, 104);" routerLink="/contacto" >Llamar a GAPS Express</a>
+                        </form>
+                     </div>
+                   </div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+

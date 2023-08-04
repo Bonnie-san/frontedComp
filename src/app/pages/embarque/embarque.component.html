@@ -1,0 +1,45 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-6 offset-md-3">
+              <div class="text-center" style="color: rgb(214, 222, 222)">
+                <h1>ENVIAR AHORA</h1>
+                <p style="text-align: justify;">Paquetes y palés, grandes y pequeños, podemos ofrecerle opciones de entrega instantánea para sus necesidades de envío, tanto a nivel nacional como internacional. Complete los detalles de su envío a continuación y le proporcionaremos servicios adaptados a sus requisitos específicos. Simplemente elija la opción que más le convenga y continúe reservando.</p>               
+                <!-- <h1>1</h1><p>INTRODUZCA ORIGEN Y DESTINO</p>
+                <h1>2</h1><p>DESCRIBA SU EMBARQUE</p>
+                <h1>3</h1><p>OBTENER PRECIOS DE ENTREGA</p>
+                <h1>4</h1><p>PROCEDA CON LA RESERVA EN LÍNEA</p> -->
+              </div>
+                <h1 class="text-center" style="color: rgb(214, 222, 222)">
+                    Envío
+                </h1>
+                <div class="card" style="width: 40rem;background-color: #424242">
+                   <div class="card-body">
+                    <form (ngSubmit) = "formSubmit()">
+                        <mat-label style="color: antiquewhite;">Peso del articulo:</mat-label>
+                        <mat-form-field class="full-width" appearance="fill">
+                            <input required [(ngModel)]="embarque.peso" name="peso" type="number" matInput placeholder="Peso(kg)">
+                        </mat-form-field>
+                        <mat-label style="color: antiquewhite;">Dimenciones:</mat-label>
+                        <mat-form-field class="full-width" appearance="fill">
+                            <input required [(ngModel)]="embarque.largo" name="largo" type="number" matInput placeholder="Largo(cm)">
+                          </mat-form-field>
+                        <mat-form-field class="full-width" appearance="fill">
+                            <input required [(ngModel)]="embarque.ancho" name="ancho" type="number" matInput placeholder="Ancho(cm)">
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="fill">
+                            <input required [(ngModel)]="embarque.altura" name="altura" type="number" matInput placeholder="Altura(cm)">
+                        </mat-form-field>
+                        <div class="container text-center">
+                            <button type="button" class="btn btn-danger" routerLink="/narvar" onclick="alert('Su paquete se ha enviado correctamente')">Envira ahora</button>
+
+                          <button type="reset" style="margin-left: 20px" mat-raised-button color="accent">Limpiar</button>
+                        </div>
+                    </form>
+                    </div>
+                  </div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>

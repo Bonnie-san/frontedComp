@@ -1,0 +1,70 @@
+<mat-toolbar color="primary" style="width: 79rem;">
+    <a
+      [routerLink]="'/'"
+      mat-icon-button
+      class="example-icon"
+      arial-label="Example icon-button with menu icon"
+    ><i class="bi bi-house-door"></i>
+      <!-- <mat-icon>menu_books</mat-icon> -->
+    </a>
+    <div class="class" style="height: 20px; width: 4%; ">
+      <a href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+          </svg>
+      </a>
+  </div>
+      <span>Portal de paqueteria</span>
+    <span class="example-spacer"></span>
+    <a
+    *ngIf = "!isLoggedIn"
+    [routerLink]="'/login'"
+    mat-icon-button
+    style="margin-right: 50px"
+    class = "example-icon favorite-icon"
+    aria-label = "Example icon-button with heart icon"
+    >
+      Iniciar sesión
+    </a>
+    <a
+    *ngIf = "!isLoggedIn"
+    [routerLink]="'/signup'"
+    mat-icon-button
+    style="margin-left: 50px"
+    class="example-icon favorite-icon mr20 ml70"
+    aria-label="Example icon-button with heart icon"
+    >
+      Registrar
+    </a>
+    <a
+    *ngIf = "isLoggedIn"
+    (click) = "logout()"
+    style="margin-right: 50px"
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+    >
+      Cerrar sesión
+    </a>
+    <button
+    *ngIf = "isLoggedIn && user"
+    mat-button
+    style="margin-left: 80px"
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+    >
+      {{ user.username }}
+    </button>
+  </mat-toolbar>
+
+
+   <!-- <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a class="dropdown-item text-white" href="#scrollspyHeading1">Rastrear envio</a></li>
+        <li><a class="dropdown-item text-white" href="#scrollspyHeading2">Enviar</a></li>
+        <li><a class="dropdown-item text-white" href="#scrollspyHeading3">Obtenga cotización</a></li>
+        <li><a class="dropdown-item text-white" href="#scrollspyHeading4">GAPS para Empresas</a></li>
+        <li><a class="dropdown-item text-white" href="#scrollspyHeading5">¿Quienes somos?</a></li>
+      </ul>
+    </li> -->

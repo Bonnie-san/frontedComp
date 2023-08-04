@@ -1,0 +1,60 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-6 offset-md-3">
+              <div class="text-center" style="color: rgb(214, 222, 222)">
+                <h1>OBTENGA UNA COTIZACIÓN DE ENVÍO EMPRESARIAL NACIONAL O INTERNACIONAL GRATUITO EN LÍNEA</h1>
+                <p style="text-align: justify;">Podemos ofrecerle una cotización instantánea para sus necesidades de envío a nivel nacional como internacional, tanto en paquetes pequeños y grandres, como tarimas (pallets). Complete los detalles de su envío a continuación para descubrir sus cotizaciones. Si está satisfecho, simplemente continúe con la reservación.</p>               
+                <!-- <h1>1</h1><p>INTRODUZCA ORIGEN Y DESTINO</p>
+                <h1>2</h1><p>DESCRIBA SU EMBARQUE</p>
+                <h1>3</h1><p>OBTENER PRECIOS DE ENTREGA</p>
+                <h1>4</h1><p>PROCEDA CON LA RESERVA EN LÍNEA</p> -->
+              </div>
+                <h1 class="text-center" style="color: rgb(214, 222, 222)">
+                    Realizo un envío como persona privada
+                </h1>
+
+
+                <div class="card" style="width: 40rem; background-color: #424242">
+                    <div class="card-body">
+                        <form (ngSubmit) = "formSubmit()">
+                            <mat-label style="color: antiquewhite;">De:</mat-label>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Estado de origen</mat-label>
+                                <input required [(ngModel)]="cotizacion.estado_envio" name="estado_envio" matInput placeholder="Estado de origen">
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Cuidad de origen (opcional)</mat-label>
+                                <input required [(ngModel)]="cotizacion.cuidadO" name="cuidadO" type="text" matInput placeholder="Cuidad de origen (opcional)">
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Codigo postal</mat-label>
+                                <input required [(ngModel)]="cotizacion.localizacion" name="localizacion" name="localizacion" matInput placeholder="Codigo postal">
+                            </mat-form-field>
+                            <mat-label style="color: antiquewhite;">Para:</mat-label>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Estado de destino</mat-label>
+                                <input required [(ngModel)]="cotizacion.estado_pago" name="estado_pago" matInput placeholder="Estado de destino">
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Cuidad de destino (opcional)</mat-label>
+                                <input required [(ngModel)]="cotizacion.cuidadD" name="cuidadD" type="text" matInput placeholder="Cuidad de destino (opcional)">
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Codigo postal</mat-label>
+                                <input required [(ngModel)]="cotizacion.localizacionD" name="localizacionD"  matInput placeholder="Codigo postal">
+                            </mat-form-field>
+                            <div class="container text-center">
+                                <button type="button" class="btn btn-danger" routerLink="/embarque">Describir embarque</button>
+                              <button type="reset" style="margin-left: 20px" mat-raised-button color="accent">Limpiar</button>
+                            </div>
+                        </form>
+        
+                     </div>
+                   </div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+

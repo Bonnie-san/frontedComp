@@ -1,0 +1,12 @@
+/* Centrar el card de restre de envios en html
+.d-flex.justify-content-center {
+    display: flex;
+    justify-content: center;
+  } */
+
+  nav {
+    position: sticky;
+    top: 0;
+  }
+  
+  
